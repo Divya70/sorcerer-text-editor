@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .BoldBlock {
   font-weight: bold;
 }
@@ -9,3 +14,40 @@
 .UnderlineBlock {
   text-decoration: underline;
 }
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.NavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.TitleText {
+  font-size: larger;
+  font-weight: 600;
+  font-family:Arial;
+}
+
+.Button {
+  font-size: larger;
+  padding: 7px 20px;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.TextEditorContainer {
+  padding: 15px;
+  margin: 3rem;
+  flex: 2;
+  border: 2px solid lightseagreen;
+}
+

@@ -105,11 +105,11 @@ function App() {
     }
   }
   return (
-    <div className="container">
-      <div className="titleBar">
-        <span></span>
-        <p>Demo editor by Ishan Jaiswal</p>
-        <button onClick={handleSave}>Save</button>
+    <div className="MainContainer">
+      <div className="NavContainer">
+        <div></div>
+        <h2 className="TitleText">Demo editor by Divya Devi</h2>
+        <button onClick={handleSave} className="Button">Save</button>
       </div>
 
       <div
@@ -117,7 +117,7 @@ function App() {
           //@ts-ignore
           childRef.current && childRef.current.focus();
         }}
-        className="editor"
+        className="TextEditorContainer"
       >
         <Editor
           ref={childRef}
