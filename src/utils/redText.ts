@@ -4,8 +4,7 @@ import {
   EditorState,
   SelectionState,
 } from "draft-js";
-
-export const handleUnderline = (
+export const redTextHandler = (
   selectionState: SelectionState,
   contentState: ContentState,
   block: ContentBlock,
@@ -23,8 +22,8 @@ export const handleUnderline = (
     //@ts-ignore
     blockMap: contentState.getBlockMap().merge({
       [blockKey]: block.merge({
-        type: "block-underline",
-        text: text.slice(4),
+        type: "block-red",
+        text: text.slice(3),
       }),
     }),
   });

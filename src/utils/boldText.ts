@@ -4,7 +4,7 @@ import {
   EditorState,
   SelectionState,
 } from "draft-js";
-export const handleBold = (
+export const boldTextHandler = (
   selectionState: SelectionState,
   contentState: ContentState,
   block: ContentBlock,

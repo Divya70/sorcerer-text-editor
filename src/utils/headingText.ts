@@ -5,7 +5,7 @@ import {
   SelectionState,
 } from "draft-js";
 
-export const handleHeading = (
+export const headingTextHandler = (
   selectionState: SelectionState,
   contentState: ContentState,
   block: ContentBlock,
